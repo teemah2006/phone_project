@@ -1,0 +1,41 @@
+<h3 style="text-align: center; color: blue;">Application Form</h3>
+<form action="./home.html" method="get">
+    <table style="border-spacing: 10px;">
+        <tr>
+            <td>
+                <p><label for="">Name: </label></p>
+                <p><input type="text" placeholder="First" required> <input type="text" placeholder="Last" required></p>
+                <p><label for="">Profile Picture: </label> <input type="file" accept=".jpeg,.png,.jpg,.webp,.gif" required></p>
+                <p><label for="">Age: </label> <input type="age" required></p>
+                <p><label for="">Gender: </label> Male <input type="radio" name="gender"> Female <input type="radio"
+                        name="gender"></p>
+                <p><label for="">Address: </label> <input type="text" style="width: 350;" required></p>
+                <p><label for="">Tel: </label> <input type="tel" pattern="[234]{3}-[0-9]{3}-[0-9]{4}-[0-9]{3}" placeholder="234-128-4223-555"></p>
+                <p><label for="">Email: </label> <input type="email" /></p>
+                <p><label for="">Qualification: </label> <input type="text"/></p>
+                <p><label for="">Application for: </label>
+                    <select name="apply" id="apply">
+                        <option value="none" selected> </option>
+                        <option value="SM">Social Media Manager</option>
+                        <option value="acc">Account Manager</option>
+                        <option value="rider">Dispatch Rider</option>
+                        <option value="clerk">Clerical Assistant</option>
+                    </select>
+                </p>
+
+
+            </td>
+
+            <td style="padding-left: 100px;">
+                <p><label for="">Expected Salary: </label> <input type="range" min="200" max="400" step="5" value="250" /></p>
+                <p><label for="">International Passport(if any): </label> <input type="text"></p>
+                <p><label for="">Driver's Licence(if any): </label> <input type="text"></p>
+                <p><label for="">Voter's card(if any): </label> <input type="text"></p>
+                <p><label for="">e-ID card(if any): </label> <input type="text"></p>
+                
+            </td>
+        </tr>
+
+    </table>
+    <p style="text-align: center;"><input type="submit" value="submit"/></p>
+</form>
