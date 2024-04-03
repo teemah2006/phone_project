@@ -1,5 +1,5 @@
 <h3 style="text-align: center; color: blue;">Application Form</h3>
-<form action="./home.html" method="get">
+<form action="./home_page.html" method="get">
     <table style="border-spacing: 10px;">
         <tr>
             <td>
@@ -27,10 +27,16 @@
             </td>
 
             <td style="padding-left: 100px;">
-                <p><label for="">Expected Salary: </label> <input type="range" min="200" max="400" step="5" value="250" /></p>
-                <p><label for="">International Passport(if any): </label> <input type="text"></p>
-                <p><label for="">Driver's Licence(if any): </label> <input type="text"></p>
-                <p><label for="">Voter's card(if any): </label> <input type="text"></p>
+                <!-- this slider shows the current value -->
+                <p><label for="">Expected Salary: </label> <input type="range" min="200" max="400" step="5" value="250" 
+                    oninput="this.nextElementSibling.value = this.value" name="salary"> <output>250</output></p>
+                <br>
+                <p><label for="">International Passport No.(if any): </label> <input type="text" pattern="[A]{1}[0-9]{8}"></p>
+                <br>
+                <p><label for="">Driver's License(if any): </label> <input type="text" pattern="[A-Z]{3}[0-9]{5}[A-Z]{2}[0-9]{1}"></p>
+                <br>
+                <p><label for="">Voter's card VIN(if any): </label> <input type="text" pattern="[A-Z,0-9]{19}"></p>
+                <br>
                 <p><label for="">e-ID card(if any): </label> <input type="text"></p>
                 
             </td>
